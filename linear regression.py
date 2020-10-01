@@ -31,6 +31,7 @@ b.grad.zero_()
 print(w.grad)
 print(b.grad)
 loss.backward()
+print(b.grad)
 with torch.no_grad():
     w -= w.grad* 1e-5
     b -= b.grad* 1e-5
